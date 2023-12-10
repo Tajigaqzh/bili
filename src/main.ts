@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { type App, createApp } from 'vue';
+import AppVue from './App.vue';
 
-createApp(App).mount('#app')
+
+import "@/assets/styles/index.scss";
+import "@/assets/styles/mode/dark.scss";
+
+const app: App<Element> = createApp(AppVue);
+
+app.mount('#app');
