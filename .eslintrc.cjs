@@ -31,6 +31,7 @@ module.exports = {
      * "error" 或 2  ==>  规则作为一个错误（代码不能执行，界面报错）
      */
     rules: {
+      'semi': 2,
       // eslint（https://eslint.bootcss.com/docs/rules/）
       'no-var': 'error', // 要求使用 let 或 const 而不是 var
       'no-multiple-empty-lines': ['warn', { max: 1 }], // 不允许多个空行
@@ -45,7 +46,7 @@ module.exports = {
       // '@typescript-eslint/no-explicit-any': 'off', // 禁止使用 any 类型
       '@typescript-eslint/no-non-null-assertion': 'off',
       // '@typescript-eslint/no-namespace': 'off', // 禁止使用自定义 TypeScript 模块和命名空间。
-      '@typescript-eslint/semi': 'off',
+      '@typescript-eslint/semi': 2, // 要求或禁止使用分号代替 ASI
   
       '@typescript-eslint/ban-types': 'off', //可以使用{}
   

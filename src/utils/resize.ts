@@ -27,7 +27,6 @@ export function useWatchResize(newVal?: boolean): void {
       htmlHtmlElement?.removeAttribute('class')
     }
   }
-
 }
 
 /**
@@ -39,4 +38,3 @@ export function useWatchResize(newVal?: boolean): void {
 watch(isLargeScreen, (newVal, _oldVal) => {
   useWatchResize(newVal)
 })
-

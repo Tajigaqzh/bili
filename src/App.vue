@@ -1,60 +1,58 @@
 <template>
-<!-- -->
-  <div class='i_screen'>
-    <div class='bili-feed4'>
+  <!-- -->
+  <div class="i_screen">
+    <div class="bili-feed4">
       <!-- header -->
-      <div class='bili-header'>
+      <div class="bili-header">
         <!--header-bar -->
-        <div class='bili-header__bar'>
-          <ul class='left-entry'>
-            <li class='v-popover-wrap'>
+        <div class="bili-header__bar">
+          <ul class="left-entry">
+            <li class="v-popover-wrap">
               <a>
                 <span>首页</span>
               </a>
             </li>
-            <li class='v-popover-wrap'>
+            <li class="v-popover-wrap">
               <a>
                 <span>番剧</span>
               </a>
             </li>
-            <li class='v-popover-wrap'>
+            <li class="v-popover-wrap">
               <a>
                 <span>直播</span>
               </a>
             </li>
           </ul>
-          <div class='center-search-container'>
-            center
-          </div>
-          <ul class='right-entry'>
+          <div class="center-search-container">center</div>
+          <ul class="right-entry">
             right
-
           </ul>
-
         </div>
-        <div class='bili-header__banner'></div>
+        <div class="bili-header__banner"></div>
       </div>
-      <div class='header-channel' style='display: none'>
-
-
-      </div>
+      <div class="header-channel" style="display: none"></div>
     </div>
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import { onMounted } from 'vue'
-import { useWatchResize } from './utils/resize.ts';
+import { useWatchResize } from './utils/resize.ts'
+
+
+
+
+
 
 /**
- * @description 挂载后监听一次，解决首屏不更新问题
+ * @description 挂载后监听一次，解决首屏不更新监听问题
  */
-onMounted(()=>{
-  useWatchResize();
+onMounted(() => {
+  useWatchResize()
 })
 </script>
 
-<style scoped lang='scss'>
+<style scoped lang="scss">
 .i_screen {
   background-color: var(--bg1);
 
@@ -82,8 +80,6 @@ onMounted(()=>{
         height: 64px;
       }
     }
-
-
   }
 }
 </style>

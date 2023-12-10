@@ -1,14 +1,9 @@
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<template>
-
-
-</template>
+<template></template>
 
 <style scoped>
-*{
+* {
   box-sizing: border-box;
 }
 </style>
