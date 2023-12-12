@@ -1,12 +1,13 @@
 @use "variable/variables";
-
 @use "variable/light";
 @use "variable/light_u";
 @use "variable/map";
+@use "variable/media";
+
 
 @use "framework/tailwindcss.css";
 @use 'scss-reset/reset';
 @use "mode/window";
 
-@use "variable/media";
+@use "mode/dark";
 

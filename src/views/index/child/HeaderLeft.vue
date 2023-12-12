@@ -2,8 +2,4 @@
 
 <template></template>
 
-<style scoped>
-* {
-  box-sizing: border-box;
-}
-</style>
+<style scoped lang="scss"></style>
