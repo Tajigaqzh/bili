@@ -9,7 +9,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: (typeof import('element-plus/es'))['ElButton']
+    ElInput: typeof import('element-plus/es')['ElInput']
     ElPopover: typeof import('element-plus/es')['ElPopover']
     HelloWorld: (typeof import('./src/components/HelloWorld.vue'))['default']
     HpPopover: typeof import('./src/components/HpPopover/index.vue')['default']

@@ -16,7 +16,7 @@ withDefaults(defineProps<HpPopoverProps>(), {});
     :show-arrow="false"
   >
     <template #reference>
-      <li class="v-popover-wrap my-hover-bounce">
+      <li class="v-popover-wrap my-hover-bounce flex items-center">
         <a>
           <slot name="left"></slot>
           <span>{{ buttonName }}</span>
@@ -25,7 +25,7 @@ withDefaults(defineProps<HpPopoverProps>(), {});
       </li>
     </template>
   </el-popover>
-  <li class="v-popover-wrap my-hover-bounce" v-else>
+ <li class="v-popover-wrap my-hover-bounce flex items-center" v-else>
     <a>
       <slot name="left"></slot>
       <span>{{ buttonName }}</span>
@@ -43,9 +43,10 @@ withDefaults(defineProps<HpPopoverProps>(), {});
   font-family: inherit;
   font-size: 100%;
 
-  color: #fff;
+
 
   a {
+    color: var(--Ba0_u);
     height: 64px;
     line-height: 64px;
     font-size: 14px;

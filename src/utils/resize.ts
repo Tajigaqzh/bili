@@ -35,7 +35,6 @@ export function useWatchResize(newVal?: boolean): void {
  * @param {boolean} _oldVal
  * @returns: void
  */
-watch(isLargeScreen, (newVal, _oldValue) => {
-  console.log(_oldValue);
+watch(isLargeScreen, (newVal ) => {
   useWatchResize(newVal);
 });

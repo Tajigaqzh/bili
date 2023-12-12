@@ -24,7 +24,6 @@ export const res: HeaderList[] = [
   },
   {
     buttonName: '番剧',
-    leftIcon: 'icon-icon_bilibili',
     popups: [
       {
         popupTitle: '热门番剧',
