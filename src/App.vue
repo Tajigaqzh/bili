@@ -6,5 +6,5 @@
 </script>
 
 <style lang="scss">
-@import url('https://at.alicdn.com/t/c/font_4362022_hcoxdljjl6l.css');
+@import 'https://at.alicdn.com/t/c/font_4362022_hcoxdljjl6l.css';
 </style>

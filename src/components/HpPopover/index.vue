@@ -37,26 +37,26 @@ withDefaults(defineProps<HpPopoverProps>(), {});
 <style scoped lang="scss">
 .v-popover-wrap {
   position: relative;
-  font-weight: 400;
-  line-height: 1.25;
-  font-style: normal;
   font-family: inherit;
   font-size: 100%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
 
 
 
   a {
-    color: var(--Ba0_u);
-    height: 64px;
-    line-height: 64px;
-    font-size: 14px;
-    cursor: pointer;
     display: flex;
     align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
-    background-color: transparent;
+    height: 64px;
     padding-right: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 64px;
+    color: var(--Ba0_u);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
   }
 }
 </style>

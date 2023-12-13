@@ -32,11 +32,11 @@ onMounted(() => {
     position: relative;
 
     .bili-header {
-      min-height: 64px;
       position: relative;
-      margin: 0 auto;
-      max-width: 2560px;
       width: 100%;
+      max-width: 2560px;
+      min-height: 64px;
+      margin: 0 auto;
       color: var(--text1);
     }
   }

@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { HeaderList, res } from './headerListData'
-import { computed, ref } from 'vue'
+import { HeaderList, res }
+
+ from './headerListData'
+import { computed, ref }
+
+ from 'vue'
 import { Search } from '@element-plus/icons-vue'
 
 const comPopTitle = computed(() => (item: HeaderList) => {
@@ -86,56 +90,56 @@ const errorHandler = () => true
 
 <style scoped lang="scss">
 .bili-header__bar {
-  background-color: var(--bg1);
   position: absolute;
   top: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
   height: 64px;
+  padding: 0 24px;
+  background-color: var(--bg1);
 
 
   .left-entry {
-    background-color: #00a3ff;
     display: flex;
-    align-items: center;
-    margin-right: 10px;
     flex-shrink: 0;
+    align-items: center;
     height: 100%;
+    margin-right: 10px;
     font-size: 14px;
+    background-color: #00a3ff;
 
 
     .v-popover-wrap {
       position: relative;
-      font-weight: 400;
-      line-height: 1.25;
-      font-style: normal;
       font-family: inherit;
       font-size: 100%;
-
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.25;
       color: #fff;
 
       a {
-        height: 64px;
-        line-height: 64px;
-        font-size: 14px;
-        cursor: pointer;
         display: flex;
         align-items: center;
-        margin-right: 10px;
-        text-decoration: none;
-        background-color: transparent;
+        height: 64px;
         padding-right: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 64px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: transparent;
       }
     }
   }
 
   .center-search-container {
-    background-color: #002F4F;
     display: flex;
     justify-content: center;
+    background-color: #002F4F;
+
     .el-input {
       min-width: 400px;
       max-width: 550px;
@@ -143,9 +147,9 @@ const errorHandler = () => true
   }
 
   .bar_right {
-    background-color: #8A4A00;
     display: flex;
     align-items: center;
+    background-color: #8A4A00;
 
     .ul_list {
       display: flex;
@@ -153,13 +157,13 @@ const errorHandler = () => true
 
       li {
         display: flex;
-        color: white;
         flex-direction: column;
-        justify-content: center;
+        flex-shrink: 0;
         align-items: center;
+        justify-content: center;
         margin-right: 8px;
         margin-left: 8px;
-        flex-shrink: 0;
+        color: white;
 
         span {
           font-size: 12px;
@@ -168,7 +172,7 @@ const errorHandler = () => true
       }
 
       li:last-child {
-        margin-right: 0px;
+        margin-right: 0;
       }
 
     }
